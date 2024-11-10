@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -129,14 +130,19 @@ public class TaskDaoImpl extends Db implements TaskDao {
     }
 
     @Override
-    public void list(String status) {
+    public List<Task> list(String status) {
+        List<Task> listTask = new ArrayList<>();
         try {
             File storageFile = getStorageFile();
-            List<Task> listTask = getListTaskFromFile(storageFile);
+            listTask = getListTaskFromFile(storageFile);
+            if (!"".equals(status) && status != null) {
+                listTask = listTask.stream().filter(item->status.equals(item.getStatus())).collect(Collectors.toList());
+            }
             LOGGER.log(Level.INFO, "List task from storage: {0}", listTask);
         } catch (IOException e) {
             LOGGER.log(Level.INFO, "", e);
         }
+        return listTask;
     }
     
 }
