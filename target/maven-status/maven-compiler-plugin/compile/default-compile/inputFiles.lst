@@ -1,0 +1,11 @@
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/App.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/StreamExample.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/controller/Controller.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/controller/ControllerImpl.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/dao/Db.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/dao/TaskDao.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/dao/TaskDaoImpl.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/model/Task.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/model/TaskStatusEnum.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/service/Service.java
+/Users/n0sba/Documents/Personal/Project/roadmap/task-tracker-cli/src/main/java/project/service/ServiceImpl.java

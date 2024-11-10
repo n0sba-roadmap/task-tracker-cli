@@ -1,0 +1,11 @@
+project/service/ServiceImpl.class
+project/controller/ControllerImpl.class
+project/dao/TaskDaoImpl.class
+project/StreamExample.class
+project/controller/Controller.class
+project/model/Task.class
+project/service/Service.class
+project/App.class
+project/dao/TaskDao.class
+project/model/TaskStatusEnum.class
+project/dao/Db.class
