@@ -1,11 +1,14 @@
 package project.service;
 
+import java.util.List;
+
+import project.model.Task;
+
 public interface Service {
     void handleCommand(String[] args);
-    void add(String[] args);
-    void update(String[] args);
-    void delete(String[] args);
-    void markInProgress(String[] args);
-    void markDone(String[] args);
-    void list(String[] args);
+    void add(String taskName);
+    void update(String taskName, String id);
+    void delete(String id);
+    void mark(String status, String id);
+    List<Task> list(String status);
 }

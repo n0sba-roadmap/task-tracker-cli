@@ -8,7 +8,7 @@ public class Db {
     
     private static final Logger LOGGER = Logger.getLogger(Db.class.getName());
     private static final String PATH_FILE = "src/resource/task.json";
-    public File getStorageFile() {
+    public static File getStorageFile() {
         File file = null;
         try {
             file = new File(PATH_FILE);
